@@ -6,7 +6,7 @@ function wait(){
 		e.src = chrome.extension.getURL('base.js');
 		var h = document.getElementsByTagName('head')[0];
 		h.insertBefore(e, h.firstChild);
-		var UICSS = document.createElement('link');UICSS.rel="stylesheet";UICSS.type="text/css";UICSS.media="screen";UICSS.href=chrome.extension.getURL("css/gladiatusUI.css");
+		var UICSS = document.createElement('link');UICSS.rel="stylesheet";UICSS.type="text/css";UICSS.media="screen";UICSS.href=chrome.extension.getURL("css/UI.css");
 		h.insertBefore(UICSS, h.firstChild);
 	}else{
 		setTimeout(wait, 250);
