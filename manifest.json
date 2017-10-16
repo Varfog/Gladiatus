@@ -8,13 +8,13 @@
   },
   "content_scripts": [
     {
-      "matches": [ "https://*.gladiatus.gameforge.com/game/index.php*" ],
+      "matches": [ "https://*.g[l]a[d]ia[t]u[s].gameforge.com/game/index.php*" ],
 	  "css": [ "css/UI.css" ],
 	  "run_at": "document_start",
 	  "all_frames":false
     },
     {
-      "matches": [ "https://*.gladiatus.gameforge.com/game/index.php*" ],
+      "matches": [ "https://*.g[l]a[d]ia[t]u[s].gameforge.com/game/index.php*" ],
 	  "js": [ "base.js" ]
 	}
   ],
