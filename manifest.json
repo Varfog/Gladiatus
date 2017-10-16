@@ -10,13 +10,13 @@
     {
       "matches": [ "https://*.gladiatus.gameforge.com/game/index.php*" ],
 	  /*"js": [ "content.js" ],*/
-	  "css": [ "css/gladiatusUI.css" ],
+	  "css": [ "css/UI.css" ],
 	  "run_at": "document_start",
 	  "all_frames":false
     },
     {
       "matches": [ "https://*.gladiatus.gameforge.com/game/index.php*" ],
-	  "js": [ "gladiatus.js" ]
+	  "js": [ "base.js" ]
 	}
   ],
    "permissions" : [ "http://*/*", "https://*/*"],
