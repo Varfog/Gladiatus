@@ -9,7 +9,6 @@
   "content_scripts": [
     {
       "matches": [ "https://*.gladiatus.gameforge.com/game/index.php*" ],
-	  /*"js": [ "content.js" ],*/
 	  "css": [ "css/UI.css" ],
 	  "run_at": "document_start",
 	  "all_frames":false
