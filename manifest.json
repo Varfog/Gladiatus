@@ -24,7 +24,7 @@
    "key": "8CQFKD22U/GVEmQirYJk+C0IATN8y5mtOhGw/51jv8Q=",
 
    "web_accessible_resources": [
-		"gladiatus.js",
+		"base.js",
 		"content.js",
 		"css/*",
 		"img/*"
