@@ -99,4 +99,15 @@ function wait(){
 		setTimeout(wait, 250);
 	}
 }
+function check_crafting(){
+	var parser = new DOMParser();
+	fetch('/game/index.php?mod=forge&submod=smeltery&sh=' + secureHash)
+	.then(res => res.text())
+	.then(res => {
+		document = parser.parseFromString(res, "text/xml");
+		var allSlot = document.querySelectorAll('#forge_nav .forge_closed').length;
+		var craftSlot = document.querySelectorAll('#forge_nav .forge_crafting').length;
+		console.log(`Плавильня - (${allSlot}) свободно, (${craftSlot}) ожидание`)
+	})
+}
 wait();
