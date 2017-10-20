@@ -1,10 +1,12 @@
 function init(){
 	let loc = document.location.search;
+	var NpcNumAttack = 0;
 	switch(true){
 		case loc.indexOf('location') > -1:
-			if(document.querySelector('h2.section-header > span')) return;
+			if(document.querySelector('h2.section-header > span')) break;
+			if(loc.indexOf('loc=4') > -1) NpcNumAttack=3;
 			var npc = document.querySelectorAll('#expedition_list button[onclick*="attack"]');
-			npc[1].click();
+			if(npc) npc[NpcNumAttack].click();
 		break;
 		case loc.indexOf('dungeon') > -1:
 			var button = document.querySelector('img[onclick*="startFight"], div[onclick*="startFight"]');
