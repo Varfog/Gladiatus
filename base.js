@@ -112,11 +112,11 @@ function check_crafting(){
 		console.log(`Плавильня - (${allSlot}) свободно, (${craftSlot}) ожидание`)
 	})
 }
-fucntion Item_sell_guild(){
+function Item_sell_guild(id){
 	jQuery.post(
 		"/game/index.php?mod=guildMarket&sh="+secureHash,
 		{
-			sellid: "62901609",
+			sellid: id,
 			preis: 1,
 			dauer: 1,
 			anbieten: "Предложить"
