@@ -112,4 +112,18 @@ function check_crafting(){
 		console.log(`Плавильня - (${allSlot}) свободно, (${craftSlot}) ожидание`)
 	})
 }
+fucntion Item_sell_guild(){
+	jQuery.post(
+		"/game/index.php?mod=guildMarket&sh="+secureHash,
+		{
+			sellid: "62901609",
+			preis: 1,
+			dauer: 1,
+			anbieten: "Предложить"
+		},
+		function(data){
+			console.log(data);
+		}
+	);
+}
 wait();
