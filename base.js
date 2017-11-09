@@ -2,6 +2,11 @@ function init(){
 	let loc = document.location.search;
 	var NpcNumAttack = 0;
 	switch(true){
+		case loc.indexOf('packages') > -1:
+			for(el of document.querySelectorAll('#inv div')){
+				el.insertAdjacentHTML('beforeend', '<a href="javascript:this.parentNode.remove()" style="position: absolute;top: 0px;right: 5px;color: red;    text-decoration: none;">x</a>');
+			}
+		break;
 		case loc.indexOf('location') > -1:
 			if(document.querySelector('h2.section-header > span')) break;
 			if(loc.indexOf('loc=4') > -1) NpcNumAttack=3;
